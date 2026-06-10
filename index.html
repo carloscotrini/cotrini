@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Carlos Cotrini · Senior Scientist, ETH Zürich</title>
+  <meta name="description" content="Carlos Cotrini is a Senior Scientist and lecturer at the Institute of Machine Learning, ETH Zürich, working on privacy-preserving machine learning, information security, and computer-science education.">
+  <meta name="theme-color" content="#16181D">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,600&display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Carlos Cotrini · Senior Scientist, ETH Zürich">
+  <meta property="og:description" content="Privacy-preserving machine learning, information security, and computer-science education at ETH Zürich.">
+  <meta property="og:image" content="assets/foto1-960.jpg">
+</head>
+
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary">
+      <div class="nav__inner">
+        <a href="index.html" class="nav__brand">Carlos Cotrini</a>
+        <ul class="nav__links">
+          <li><a class="nav__link" href="index.html" aria-current="page">Home</a></li>
+          <li><a class="nav__link" href="teaching.html">Teaching</a></li>
+          <li><a class="nav__link" href="research.html">Research</a></li>
+          <li><a class="nav__link" href="projects.html">Projects</a></li>
+        </ul>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="site-menu" aria-label="Menu">
+          <span class="nav-toggle__bar"></span><span class="nav-toggle__bar"></span><span class="nav-toggle__bar"></span>
+        </button>
+      </div>
+      <div id="site-menu" class="site-menu" hidden>
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="teaching.html">Teaching</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="projects.html">Projects</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <header class="hero">
+      <div class="hero__inner">
+        <div class="hero__text">
+          <p class="eyebrow reveal reveal-1">Senior Scientist · Lecturer · ETH Zürich</p>
+          <h1 class="hero__name reveal reveal-1">Carlos Cotrini</h1>
+          <span class="ribbon reveal reveal-1"></span>
+          <p class="hero__lead reveal reveal-2">I teach machine learning and computer science, and research how we learn them.</p>
+          <p class="hero__bio reveal reveal-2">
+            I am a Senior Scientist and Lecturer at the Institute of Machine Learning, ETH Zürich,
+            under the supervision of <a href="https://inf.ethz.ch/people/person-detail.buhmann.html">Professor Emeritus Joachim Buhmann</a>.
+            Teaching is my focus: I teach machine learning and computer science to audiences from
+            master's students to managers in continuing education, and my research now turns to
+            computer-science education itself.
+          </p>
+          <div class="hero__cta reveal reveal-3">
+            <a class="btn" href="teaching.html">Explore teaching</a>
+            <a class="btn btn--ghost-dark" href="research.html">View research</a>
+          </div>
+          <p class="hero__contact reveal reveal-3">ccarlos (at) inf.ethz.ch &nbsp;·&nbsp; CAB, ETH Zürich</p>
+        </div>
+        <figure class="hero__figure reveal reveal-2">
+          <img class="hero__portrait"
+               src="assets/foto1-480.jpg"
+               srcset="assets/foto1-480.jpg 480w, assets/foto1-720.jpg 720w, assets/foto1-960.jpg 960w"
+               sizes="(min-width:768px) 360px, 240px"
+               width="360" height="450"
+               alt="Portrait of Carlos Cotrini" fetchpriority="high" decoding="async">
+        </figure>
+      </div>
+    </header>
+
+    <!-- Featured lectures -->
+    <section class="highlights" aria-labelledby="lectures-h">
+      <div class="highlights__inner">
+        <p class="eyebrow">From the lecture hall</p>
+        <h2 class="section__title" id="lectures-h">Featured lectures</h2>
+        <div class="lectures lectures--2">
+          <div class="lecture">
+            <div class="video-embed">
+              <video controls preload="none" playsinline poster="assets/lectures/regression-poster.jpg">
+                <source src="https://dist.tobira.ethz.ch/mh_default_org/engage-player/2b1bef42-3d2c-4ac6-ae84-906a6a440c44/a7ac7ef3-2f27-4599-987c-5e7129bf9c21/presentation-ddacb587-b693-4ee3-b415-654fab057101.mp4" type="video/mp4">
+                <a href="https://video.ethz.ch/lectures/d-infk/2025/autumn/252-0535-00L/v/NkEf4TB7_8D">Watch on the ETH video portal</a>
+              </video>
+            </div>
+            <div class="lecture__cap">
+              <span class="lecture__title">Regression, from least squares to neural tangent kernels</span>
+              <span class="lecture__meta">Advanced Machine Learning &middot; ETH Zürich &middot; <a href="assets/lectures/regression-notes.pdf">Notes (PDF)</a> &middot; <a href="https://video.ethz.ch/lectures/d-infk/2025/autumn/252-0535-00L/v/NkEf4TB7_8D">Watch on ETH</a></span>
+            </div>
+          </div>
+          <div class="lecture">
+            <div class="video-embed">
+              <video controls preload="none" playsinline poster="assets/lectures/convex-poster.jpg">
+                <source src="https://dist.tobira.ethz.ch/mh_default_org/engage-player/07e0b054-9b46-4f99-a434-f6312769e096/d23b8a7b-7cdb-4a13-bf91-f704ea0d7c63/presentation-1c708dfb-91d1-40b8-b94f-389f666540a1.mp4" type="video/mp4">
+                <a href="https://video.ethz.ch/lectures/d-infk/2025/autumn/252-0535-00L/v/NgQcIcnBuOL">Watch on the ETH video portal</a>
+              </video>
+            </div>
+            <div class="lecture__cap">
+              <span class="lecture__title">A recap on convex optimization</span>
+              <span class="lecture__meta">Advanced Machine Learning &middot; ETH Zürich &middot; <a href="assets/lectures/convex-optimization-notes.pdf">Notes (PDF)</a> &middot; <a href="https://video.ethz.ch/lectures/d-infk/2025/autumn/252-0535-00L/v/NgQcIcnBuOL">Watch on ETH</a></span>
+            </div>
+          </div>
+        </div>
+        <p style="text-align:center;margin-top:2rem;"><a class="btn btn--ghost" href="teaching.html">See the full teaching portfolio</a></p>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section container" aria-labelledby="about-h">
+      <h2 class="section__title" id="about-h">About</h2>
+      <div class="prose">
+        <p>
+          I am a lecturer at the Institute of Machine Learning at ETH Zürich, under the supervision of
+          <a href="https://inf.ethz.ch/people/person-detail.buhmann.html">Professor Emeritus Joachim Buhmann</a>.
+          I teach courses in machine learning and computer science with a focus on making complex
+          concepts accessible to students and bridging theory with practical applications.
+        </p>
+        <p>
+          My research journey includes a PhD in information security under the supervision of
+          <a href="https://inf.ethz.ch/personal/basin/">Prof. David Basin</a>, where I developed
+          expertise in access-control policy mining and the privacy and security analysis of
+          web technologies. Earlier, I worked on infon logic under the guidance of
+          <a href="http://web.eecs.umich.edu/~gurevich/">Prof. Yuri Gurevich</a>.
+        </p>
+        <p>
+          Today my work focuses on privacy-preserving and robust machine learning, large-scale
+          security and compliance analysis, and the craft of teaching these subjects well, through
+          intuitive explanations and from-scratch implementations that demystify how modern models
+          actually work.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer__inner">
+      <div>Carlos Cotrini &nbsp;·&nbsp; ccarlos (at) inf.ethz.ch &nbsp;·&nbsp; CAB, ETH Zürich</div>
+      <div class="footer__links">
+        <a href="research.html">Research</a>
+        <a href="https://dblp.org/pid/150/0652.html">DBLP</a>
+        <a href="https://github.com/carloscotrini">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="nav.js" defer></script>
+</body>
+</html>

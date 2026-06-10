@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects · Carlos Cotrini</title>
+  <meta name="description" content="Software, tools, and open resources by Carlos Cotrini: CookieBlock, the Unicorn policy miner, open course materials, Dockerized workshops, and from-scratch ML implementations.">
+  <meta name="theme-color" content="#16181D">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,600&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary">
+      <div class="nav__inner">
+        <a href="index.html" class="nav__brand">Carlos Cotrini</a>
+        <ul class="nav__links">
+          <li><a class="nav__link" href="index.html">Home</a></li>
+          <li><a class="nav__link" href="teaching.html">Teaching</a></li>
+          <li><a class="nav__link" href="research.html">Research</a></li>
+          <li><a class="nav__link" href="projects.html" aria-current="page">Projects</a></li>
+        </ul>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="site-menu" aria-label="Menu">
+          <span class="nav-toggle__bar"></span><span class="nav-toggle__bar"></span><span class="nav-toggle__bar"></span>
+        </button>
+      </div>
+      <div id="site-menu" class="site-menu" hidden>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="teaching.html">Teaching</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="projects.html" aria-current="page">Projects</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="container">
+      <div class="opener">
+        <p class="eyebrow">Projects</p>
+        <h1 class="opener__title">Projects &amp; Open Resources</h1>
+        <p class="opener__sub">Software, tools, and open materials that came out of my research and teaching, free to read, run, and reuse.</p>
+        <span class="ribbon"></span>
+      </div>
+
+      <section class="section" aria-labelledby="software-h" style="padding-top:0;">
+        <h2 class="section__title" id="software-h">Software &amp; Tools</h2>
+        <div class="cards cards--2">
+          <article class="card">
+            <p class="eyebrow">Browser extension · GDPR</p>
+            <h2 class="card__title">CookieBlock</h2>
+            <p class="card__desc">A browser extension that uses machine learning to enforce GDPR cookie consent on the client, classifying cookies by purpose so users can reject non-essential ones automatically. Built on our large-scale study of cookie-banner compliance (USENIX Security 2022, Distinguished Artifact Award).</p>
+            <p class="pub__links"><a href="https://www.usenix.org/conference/usenixsecurity22/presentation/bollinger">Paper</a></p>
+          </article>
+          <article class="card">
+            <p class="eyebrow">Access control · research tool</p>
+            <h2 class="card__title">Unicorn: a universal policy miner</h2>
+            <p class="card__desc">A universal method for building access-control policy miners across many languages, including ABAC, RBAC, RBAC with spatio-temporal constraints, and a fragment of XACML, from only a language specification and a fitness metric. Introduced at ACM CCS 2019.</p>
+            <p class="pub__links"><a href="https://arxiv.org/abs/1908.05994">Paper</a></p>
+          </article>
+          <article class="card">
+            <p class="eyebrow">Open educational resource</p>
+            <h2 class="card__title">Statistical Learning Theory: course script</h2>
+            <p class="card__desc">An open, self-contained script on the theoretical foundations of machine learning, from PAC learning and VC dimension to Rademacher complexity and algorithmic stability.</p>
+            <p class="pub__links">
+              <a href="https://github.com/carloscotrini/slt_script">GitHub</a>
+              <span class="sep">·</span>
+              <a href="https://ml2.inf.ethz.ch/courses/slt/">Course</a>
+            </p>
+          </article>
+          <article class="card">
+            <p class="eyebrow">Hands-on · reproducible</p>
+            <h2 class="card__title">ML &amp; DL Workshop (Dockerized)</h2>
+            <p class="card__desc">Ready-to-run Docker images for a hands-on introduction to classification with machine and deep learning, requiring only basic Python, so anyone can reproduce the workshop locally.</p>
+            <p class="pub__links">
+              <a href="https://hub.docker.com/r/carloscotrini/mlworkshop">ML image</a>
+              <span class="sep">·</span>
+              <a href="https://hub.docker.com/r/carloscotrini/dlworkshop">DL image</a>
+              <span class="sep">·</span>
+              <a href="assets/mldl/ml_workshop.pdf">Slides</a>
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="oer-h" style="padding-top:0;">
+        <h2 class="section__title" id="oer-h">From-Scratch Explainers</h2>
+        <div class="cards cards--2">
+          <article class="card">
+            <p class="eyebrow">Tutorial · implementation</p>
+            <h2 class="card__title">Transformers &amp; Stable Diffusion, from scratch</h2>
+            <p class="card__desc">A complete, minimal implementation of a transformer translator and a small stable-diffusion model, with intuition for every component. It is the basis of our SIGCSE 2026 award-winning study on full-stack machine-learning instruction.</p>
+            <p class="pub__links">
+              <a href="teaching.html">Tutorial</a>
+              <span class="sep">·</span>
+              <a href="https://doi.org/10.1145/3770762.3772595">Paper</a>
+            </p>
+          </article>
+          <article class="card">
+            <p class="eyebrow">Open lecture notes</p>
+            <h2 class="card__title">Elementary explainers</h2>
+            <p class="card__desc">Self-contained notes that build hard ideas from the ground up: an elementary introduction to quantum computing using only real linear algebra, the EM algorithm derived with a two-dimensional dog and a vegan flea, and algorithm validation via information theory.</p>
+            <p class="pub__links">
+              <a href="assets/qc/notes.pdf">Quantum computing</a>
+              <span class="sep">·</span>
+              <a href="assets/em/notes.pdf">EM algorithm</a>
+              <span class="sep">·</span>
+              <a href="assets/model_valid/notes.pdf">Algorithm validation</a>
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="contact-h" style="padding-top:0;">
+        <h2 class="section__title" id="contact-h">Get in Touch</h2>
+        <div class="prose">
+          <p>
+            I am always glad to hear from students and colleagues interested in these projects or in machine
+            learning, security, and computer-science education more broadly. The quickest way to reach me is
+            by email.
+          </p>
+          <p>
+            Email: ccarlos (at) inf.ethz.ch<br>
+            Office: CAB, ETH Zürich, Department of Computer Science, Institute of Machine Learning
+          </p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer__inner">
+      <div>Carlos Cotrini &nbsp;·&nbsp; ccarlos (at) inf.ethz.ch &nbsp;·&nbsp; CAB, ETH Zürich</div>
+      <div class="footer__links">
+        <a href="research.html">Research</a>
+        <a href="https://dblp.org/pid/150/0652.html">DBLP</a>
+        <a href="https://github.com/carloscotrini">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="nav.js" defer></script>
+</body>
+</html>
