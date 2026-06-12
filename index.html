@@ -6,14 +6,41 @@
   <title>Carlos Cotrini · Senior Scientist, ETH Zürich</title>
   <meta name="description" content="Carlos Cotrini is a Senior Scientist and lecturer at the Institute of Machine Learning, ETH Zürich, working on privacy-preserving machine learning, information security, and computer-science education.">
   <meta name="theme-color" content="#16181D">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,600&display=swap">
+  <link rel="canonical" href="https://carloscotrini.github.io/cotrini/">
+  <link rel="icon" href="favicon.ico" sizes="48x48">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="stylesheet" href="styles.css">
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Carlos Cotrini">
   <meta property="og:title" content="Carlos Cotrini · Senior Scientist, ETH Zürich">
   <meta property="og:description" content="Privacy-preserving machine learning, information security, and computer-science education at ETH Zürich.">
-  <meta property="og:image" content="assets/foto1-960.jpg">
+  <meta property="og:url" content="https://carloscotrini.github.io/cotrini/">
+  <meta property="og:image" content="https://carloscotrini.github.io/cotrini/assets/foto1-960.jpg">
+  <meta property="og:image:width" content="960">
+  <meta property="og:image:height" content="1271">
+  <meta name="twitter:card" content="summary">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Carlos Cotrini",
+    "givenName": "Carlos",
+    "familyName": "Cotrini",
+    "jobTitle": "Senior Scientist and Lecturer",
+    "worksFor": {"@type": "CollegeOrUniversity", "name": "ETH Zürich", "url": "https://ethz.ch/"},
+    "url": "https://carloscotrini.github.io/cotrini/",
+    "image": "https://carloscotrini.github.io/cotrini/assets/foto1-960.jpg",
+    "sameAs": [
+      "https://orcid.org/0009-0001-8167-2284",
+      "https://scholar.google.com/citations?user=pyRIDr4AAAAJ",
+      "https://dblp.org/pid/150/0652.html",
+      "https://github.com/carloscotrini",
+      "https://people.inf.ethz.ch/ccarlos/"
+    ],
+    "knowsAbout": ["Machine Learning", "Computer Science Education", "Information Security", "Privacy"]
+  }
+  </script>
 </head>
 
 <body>
@@ -27,6 +54,7 @@
           <li><a class="nav__link" href="index.html" aria-current="page">Home</a></li>
           <li><a class="nav__link" href="teaching.html">Teaching</a></li>
           <li><a class="nav__link" href="research.html">Research</a></li>
+          <li><a class="nav__link" href="materials.html">Materials</a></li>
         </ul>
         <button class="nav-toggle" aria-expanded="false" aria-controls="site-menu" aria-label="Menu">
           <span class="nav-toggle__bar"></span><span class="nav-toggle__bar"></span><span class="nav-toggle__bar"></span>
@@ -37,6 +65,7 @@
           <li><a href="index.html" aria-current="page">Home</a></li>
           <li><a href="teaching.html">Teaching</a></li>
           <li><a href="research.html">Research</a></li>
+          <li><a href="materials.html">Materials</a></li>
         </ul>
       </div>
     </nav>
@@ -75,6 +104,25 @@
       </div>
     </header>
 
+    <!-- News -->
+    <section class="section container" aria-labelledby="news-h">
+      <h2 class="section__title" id="news-h">News</h2>
+      <ul class="news">
+        <li class="news__item">
+          <span class="news__date">2026</span>
+          <span class="news__text">Our paper <a href="https://doi.org/10.1145/3770762.3772595">Transforming Confusion into Diffusion</a>, on teaching machine learning bottom-up and from scratch, received the <strong>CER Best Paper (Global) award</strong> at the ACM SIGCSE Technical Symposium 2026.</span>
+        </li>
+        <li class="news__item">
+          <span class="news__date">Spring 2026</span>
+          <span class="news__text">Five new <a href="teaching.html#viz-h">interactive visualizations</a> for my courses: PCA on 175 years of Senate votes, eigenfaces, neural networks, a sunrise-painting VAE, and reinforcement learning as a Pokémon battle.</span>
+        </li>
+        <li class="news__item">
+          <span class="news__date">Autumn 2025</span>
+          <span class="news__text">Two recorded lectures from Advanced Machine Learning are <a href="teaching.html">online with full notes</a>: regression from least squares to neural tangent kernels, and a recap on convex optimization.</span>
+        </li>
+      </ul>
+    </section>
+
     <!-- Featured lectures -->
     <section class="highlights" aria-labelledby="lectures-h">
       <div class="highlights__inner">
@@ -110,6 +158,36 @@
       </div>
     </section>
 
+    <!-- Featured visualizations -->
+    <section class="section container" aria-labelledby="viz-home-h">
+      <p class="eyebrow">Machine learning, made tangible</p>
+      <h2 class="section__title" id="viz-home-h">Interactive visualizations</h2>
+      <div class="cards cards--3">
+        <article class="card">
+          <a class="card__thumb-link" href="https://sml-fs26.github.io/classic_rl/pokemon-battle/" target="_blank" rel="noopener"><img class="card__thumb" src="assets/viz/pokemon-rl.jpg" alt="Pokemon: a reinforcement learning adventure" loading="lazy" width="1024" height="640"></a>
+          <p class="eyebrow">Reinforcement learning</p>
+          <h3 class="card__title"><a href="https://sml-fs26.github.io/classic_rl/pokemon-battle/" target="_blank" rel="noopener">Pokémon: a reinforcement learning adventure</a></h3>
+          <p class="card__desc">Classic reinforcement learning, told as a retro Pokémon battle.</p>
+          <p class="pub__links"><a href="https://sml-fs26.github.io/classic_rl/pokemon-battle/" target="_blank" rel="noopener">Open visualization &#8599;</a></p>
+        </article>
+        <article class="card">
+          <a class="card__thumb-link" href="https://eth-bmai-fs26.github.io/vae_sunrises/" target="_blank" rel="noopener"><img class="card__thumb" src="assets/viz/sunrise-machine.jpg" alt="Sunrise Machine: a variational autoencoder" loading="lazy" width="1024" height="640"></a>
+          <p class="eyebrow">Generative models</p>
+          <h3 class="card__title"><a href="https://eth-bmai-fs26.github.io/vae_sunrises/" target="_blank" rel="noopener">Sunrise Machine</a></h3>
+          <p class="card__desc">A variational autoencoder that learns to paint sunrises, and lets you wander its latent space.</p>
+          <p class="pub__links"><a href="https://eth-bmai-fs26.github.io/vae_sunrises/" target="_blank" rel="noopener">Open visualization &#8599;</a></p>
+        </article>
+        <article class="card">
+          <a class="card__thumb-link" href="https://sml-fs26.github.io/pca-kmeans-rf/congress-story/" target="_blank" rel="noopener"><img class="card__thumb" src="assets/viz/congress-story.jpg" alt="The Senate, projected: a PCA data story" loading="lazy" width="1024" height="640"></a>
+          <p class="eyebrow">Principal component analysis</p>
+          <h3 class="card__title"><a href="https://sml-fs26.github.io/pca-kmeans-rf/congress-story/" target="_blank" rel="noopener">The Senate, projected</a></h3>
+          <p class="card__desc">A data story that watches 175 years of U.S. Senate roll-call votes collapse onto two principal components.</p>
+          <p class="pub__links"><a href="https://sml-fs26.github.io/pca-kmeans-rf/congress-story/" target="_blank" rel="noopener">Open visualization &#8599;</a></p>
+        </article>
+      </div>
+      <p style="text-align:center;margin-top:2rem;"><a class="btn btn--ghost" href="teaching.html#viz-h">All five visualizations</a></p>
+    </section>
+
     <!-- About -->
     <section class="section container" aria-labelledby="about-h">
       <h2 class="section__title" id="about-h">About</h2>
@@ -142,6 +220,8 @@
       <div>Carlos Cotrini &nbsp;·&nbsp; ccarlos (at) inf.ethz.ch &nbsp;·&nbsp; CAB, ETH Zürich</div>
       <div class="footer__links">
         <a href="research.html">Research</a>
+        <a href="https://scholar.google.com/citations?user=pyRIDr4AAAAJ">Google Scholar</a>
+        <a href="https://orcid.org/0009-0001-8167-2284">ORCID</a>
         <a href="https://dblp.org/pid/150/0652.html">DBLP</a>
         <a href="https://github.com/carloscotrini">GitHub</a>
       </div>

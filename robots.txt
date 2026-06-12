@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://carloscotrini.github.io/cotrini/sitemap.xml
