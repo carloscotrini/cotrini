@@ -243,7 +243,7 @@ p{text-wrap:pretty;}
   background:var(--signal-100);border-radius:14px;z-index:0;
 }
 .hero__portrait{
-  position:relative;z-index:1;width:100%;border-radius:14px;box-shadow:var(--shadow-md);
+  position:relative;z-index:1;width:100%;height:auto;border-radius:14px;box-shadow:var(--shadow-md);
   aspect-ratio:4/5;object-fit:cover;object-position:top center;
   background:var(--paper-0);border:6px solid var(--paper-0);
 }
@@ -412,7 +412,7 @@ p{text-wrap:pretty;}
 .lecture__meta a:hover{color:var(--accent-800);text-decoration:underline;text-underline-offset:.15em;}
 
 /* ---------- Thumbnail cards (visualizations) -------------------------------- */
-.card__thumb{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;object-position:top center;
+.card__thumb{display:block;width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;object-position:top center;
   border-radius:8px;border:1px solid var(--line-200);margin-bottom:var(--s3);background:var(--paper-50);}
 a.card__thumb-link{display:block;text-decoration:none;}
 
